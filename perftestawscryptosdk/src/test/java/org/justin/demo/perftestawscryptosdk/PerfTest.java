@@ -364,4 +364,98 @@ public final class PerfTest {
 //	Count: 10000, Time:   5.149 sec, Avg:   0.515 msec, Thru:    1942.076/sec (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256_ECDSA_P256)
 //	Count: 10000, Time:  13.468 sec, Avg:   1.347 msec, Thru:     742.494/sec (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
 //	Count: 10000, Time:  12.426 sec, Avg:   1.243 msec, Thru:     804.792/sec (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//
+///////////////////////////////////
+// SAMPLE OUTPUT (AWS t2.micro AMI)
+///////////////////////////////////
+//
+//	NOTE: JCE policy max AES key length: unlimited
+//	***********
+//	beforeClass
+//	***********
+//	Warming up => Count: 100 (ALG_AES_128_GCM_IV12_TAG16_NO_KDF)
+//	Warming up => Count: 100 (ALG_AES_192_GCM_IV12_TAG16_NO_KDF)
+//	Warming up => Count: 100 (ALG_AES_256_GCM_IV12_TAG16_NO_KDF)
+//	Warming up => Count: 100 (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256)
+//	Warming up => Count: 100 (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA256)
+//	Warming up => Count: 100 (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA256)
+//	Warming up => Count: 100 (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256_ECDSA_P256)
+//	Warming up => Count: 100 (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	Warming up => Count: 100 (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	Warming up => Count: 1000 (ALG_AES_128_GCM_IV12_TAG16_NO_KDF)
+//	Warming up => Count: 1000 (ALG_AES_192_GCM_IV12_TAG16_NO_KDF)
+//	Warming up => Count: 1000 (ALG_AES_256_GCM_IV12_TAG16_NO_KDF)
+//	Warming up => Count: 1000 (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256)
+//	Warming up => Count: 1000 (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA256)
+//	Warming up => Count: 1000 (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA256)
+//	Warming up => Count: 1000 (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256_ECDSA_P256)
+//	Warming up => Count: 1000 (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	Warming up => Count: 1000 (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	
+//	*********************
+//	Test0001_testWithFile
+//	*********************
+//	Count:   100, Time:   0.022 sec, Avg:   0.223 msec, Thru:    4491.371/sec (ALG_AES_128_GCM_IV12_TAG16_NO_KDF)
+//	Count:   100, Time:   0.018 sec, Avg:   0.181 msec, Thru:    5523.492/sec (ALG_AES_192_GCM_IV12_TAG16_NO_KDF)
+//	Count:   100, Time:   0.021 sec, Avg:   0.214 msec, Thru:    4669.619/sec (ALG_AES_256_GCM_IV12_TAG16_NO_KDF)
+//	Count:   100, Time:   0.018 sec, Avg:   0.182 msec, Thru:    5498.338/sec (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count:   100, Time:   0.011 sec, Avg:   0.107 msec, Thru:    9328.988/sec (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count:   100, Time:   0.016 sec, Avg:   0.163 msec, Thru:    6150.959/sec (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count:   100, Time:   0.112 sec, Avg:   1.119 msec, Thru:     893.581/sec (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256_ECDSA_P256)
+//	Count:   100, Time:   0.212 sec, Avg:   2.123 msec, Thru:     471.024/sec (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	Count:   100, Time:   0.219 sec, Avg:   2.188 msec, Thru:     456.979/sec (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	
+//	Count:  1000, Time:   0.082 sec, Avg:   0.082 msec, Thru:   12193.889/sec (ALG_AES_128_GCM_IV12_TAG16_NO_KDF)
+//	Count:  1000, Time:   0.147 sec, Avg:   0.147 msec, Thru:    6789.250/sec (ALG_AES_192_GCM_IV12_TAG16_NO_KDF)
+//	Count:  1000, Time:   0.107 sec, Avg:   0.107 msec, Thru:    9356.930/sec (ALG_AES_256_GCM_IV12_TAG16_NO_KDF)
+//	Count:  1000, Time:   0.141 sec, Avg:   0.141 msec, Thru:    7113.194/sec (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count:  1000, Time:   0.155 sec, Avg:   0.155 msec, Thru:    6469.541/sec (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count:  1000, Time:   0.134 sec, Avg:   0.134 msec, Thru:    7460.345/sec (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count:  1000, Time:   1.488 sec, Avg:   1.488 msec, Thru:     672.183/sec (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256_ECDSA_P256)
+//	Count:  1000, Time:   2.326 sec, Avg:   2.326 msec, Thru:     429.834/sec (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	Count:  1000, Time:   2.440 sec, Avg:   2.440 msec, Thru:     409.900/sec (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	
+//	Count: 10000, Time:   0.680 sec, Avg:   0.068 msec, Thru:   14700.679/sec (ALG_AES_128_GCM_IV12_TAG16_NO_KDF)
+//	Count: 10000, Time:   0.716 sec, Avg:   0.072 msec, Thru:   13969.724/sec (ALG_AES_192_GCM_IV12_TAG16_NO_KDF)
+//	Count: 10000, Time:   0.738 sec, Avg:   0.074 msec, Thru:   13545.948/sec (ALG_AES_256_GCM_IV12_TAG16_NO_KDF)
+//	Count: 10000, Time:   0.823 sec, Avg:   0.082 msec, Thru:   12153.108/sec (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count: 10000, Time:   0.804 sec, Avg:   0.080 msec, Thru:   12434.267/sec (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count: 10000, Time:   0.818 sec, Avg:   0.082 msec, Thru:   12219.475/sec (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count: 10000, Time:   8.504 sec, Avg:   0.850 msec, Thru:    1175.877/sec (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256_ECDSA_P256)
+//	Count: 10000, Time:  20.738 sec, Avg:   2.074 msec, Thru:     482.202/sec (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	Count: 10000, Time:  20.819 sec, Avg:   2.082 msec, Thru:     480.332/sec (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	
+//	
+//	************************
+//	Test0002_testWithoutFile
+//	************************
+//	Count:   100, Time:   0.024 sec, Avg:   0.239 msec, Thru:    4182.102/sec (ALG_AES_128_GCM_IV12_TAG16_NO_KDF)
+//	Count:   100, Time:   0.018 sec, Avg:   0.181 msec, Thru:    5510.298/sec (ALG_AES_192_GCM_IV12_TAG16_NO_KDF)
+//	Count:   100, Time:   0.013 sec, Avg:   0.129 msec, Thru:    7729.333/sec (ALG_AES_256_GCM_IV12_TAG16_NO_KDF)
+//	Count:   100, Time:   0.008 sec, Avg:   0.081 msec, Thru:   12295.741/sec (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count:   100, Time:   0.009 sec, Avg:   0.090 msec, Thru:   11132.869/sec (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count:   100, Time:   0.010 sec, Avg:   0.100 msec, Thru:    9975.334/sec (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count:   100, Time:   0.073 sec, Avg:   0.729 msec, Thru:    1372.412/sec (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256_ECDSA_P256)
+//	Count:   100, Time:   0.204 sec, Avg:   2.038 msec, Thru:     490.629/sec (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	Count:   100, Time:   0.235 sec, Avg:   2.348 msec, Thru:     425.806/sec (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	
+//	Count:  1000, Time:   0.068 sec, Avg:   0.068 msec, Thru:   14658.009/sec (ALG_AES_128_GCM_IV12_TAG16_NO_KDF)
+//	Count:  1000, Time:   0.069 sec, Avg:   0.069 msec, Thru:   14444.453/sec (ALG_AES_192_GCM_IV12_TAG16_NO_KDF)
+//	Count:  1000, Time:   0.072 sec, Avg:   0.072 msec, Thru:   13805.660/sec (ALG_AES_256_GCM_IV12_TAG16_NO_KDF)
+//	Count:  1000, Time:   0.079 sec, Avg:   0.079 msec, Thru:   12710.602/sec (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count:  1000, Time:   0.077 sec, Avg:   0.077 msec, Thru:   12942.023/sec (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count:  1000, Time:   0.079 sec, Avg:   0.079 msec, Thru:   12634.750/sec (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count:  1000, Time:   0.735 sec, Avg:   0.735 msec, Thru:    1360.918/sec (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256_ECDSA_P256)
+//	Count:  1000, Time:   2.069 sec, Avg:   2.069 msec, Thru:     483.210/sec (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	Count:  1000, Time:   2.075 sec, Avg:   2.075 msec, Thru:     481.954/sec (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	
+//	Count: 10000, Time:   0.659 sec, Avg:   0.066 msec, Thru:   15164.918/sec (ALG_AES_128_GCM_IV12_TAG16_NO_KDF)
+//	Count: 10000, Time:   0.692 sec, Avg:   0.069 msec, Thru:   14456.181/sec (ALG_AES_192_GCM_IV12_TAG16_NO_KDF)
+//	Count: 10000, Time:   0.704 sec, Avg:   0.070 msec, Thru:   14201.231/sec (ALG_AES_256_GCM_IV12_TAG16_NO_KDF)
+//	Count: 10000, Time:   0.745 sec, Avg:   0.074 msec, Thru:   13428.963/sec (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count: 10000, Time:   0.777 sec, Avg:   0.078 msec, Thru:   12865.454/sec (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count: 10000, Time:   0.790 sec, Avg:   0.079 msec, Thru:   12653.498/sec (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA256)
+//	Count: 10000, Time:   7.408 sec, Avg:   0.741 msec, Thru:    1349.983/sec (ALG_AES_128_GCM_IV12_TAG16_HKDF_SHA256_ECDSA_P256)
+//	Count: 10000, Time:  20.709 sec, Avg:   2.071 msec, Thru:     482.873/sec (ALG_AES_192_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
+//	Count: 10000, Time:  20.823 sec, Avg:   2.082 msec, Thru:     480.231/sec (ALG_AES_256_GCM_IV12_TAG16_HKDF_SHA384_ECDSA_P384)
 }

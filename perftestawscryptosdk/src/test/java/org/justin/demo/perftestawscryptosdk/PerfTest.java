@@ -39,6 +39,15 @@ public final class PerfTest {
 	private static final String CLEAR_TEXT = "PLAIN TEXT, PLAIN TEXT, PLAIN TEXT, PLAIN TEXT PLAIN TEXT, PLAIN TEXT, PLAIN TEXT, PLAIN TEXT PLAIN TEXT, PLAIN TEXT, PLAIN TEXT, PLAIN TEXT PLAIN TEXT, PLAIN TEXT, PLAIN TEXT, PLAIN TEXT";
 	private static final int[] WARMUP_ITERATIONS  = {100, 1000};
 	private static final int[] TEST_ITERATIONS    = {100, 1000, 10000};
+	private static final String OUTPUT_FILE_NAME;
+	static {
+		if (System.getProperty("os.name").startsWith("win")) {
+			OUTPUT_FILE_NAME = "E:/EncryptedOutFile.txt";
+		} else {
+			OUTPUT_FILE_NAME = "/tmp/EncryptedOutFile.txt";
+		}
+	}
+
 	private static final int   MAX_AES_KEY_LENGTH;	// ASSUMPTION: 128 for default JCE policy, 192/256 for unlimited JCE policy
 	private static final CryptoAlgorithm[] CRYPTO_ALGORITHMS;
 	static {
@@ -142,7 +151,7 @@ public final class PerfTest {
 		final JceMasterKey masterKeyProvider = JceMasterKey.getInstance(masterAes128Key, "Example", "RandomKey", "AES/GCM/NoPadding"); 
 		final Map<String, String> context = Collections.singletonMap("Example", "String");
 		final long startNanos;	// use nanosecond timing for calculating sub-millisecond averages
-		try (PrintWriter pw = (doFile ? new PrintWriter(new BufferedWriter(new FileWriter("E:/EncryptedOutFile.txt", true))) : null)) {
+		try (PrintWriter pw = (doFile ? new PrintWriter(new BufferedWriter(new FileWriter(OUTPUT_FILE_NAME, true))) : null)) {
 			startNanos = System.nanoTime();
 			for (int currentMainIteration = 1; currentMainIteration < numIterations; currentMainIteration++) {
 				if (doFile) {
